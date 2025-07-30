@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "489839752903",
+    "project_id": "pindrive-ghana",
+    "storage_bucket": "pindrive-ghana.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489839752903:android:c2555d89a0d9acbdb2b0e2",
+        "android_client_info": {
+          "package_name": "com.example.pindrive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-StghZ-NMkpePQNu6Ioh3LQK2-TvC4v4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
