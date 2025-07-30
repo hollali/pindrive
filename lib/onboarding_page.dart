@@ -6,25 +6,37 @@ class OnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff2C2B34),
       body: Column(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              image:DecorationImage(
-                image: AssetImage('assets/onboarding.png'),
-                fit: BoxFit.cover
-                )
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets'),
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
           ),
-          Container(
+          Expanded(
+          child:Container(
             child: Column(
               children: [
-                Text('Premium cars at affordable prices. \nEnjoy the luxury of driving without the hassle of ownership.'),
+                Text(
+                  'Premium cars at affordable prices. \nEnjoy the luxury of driving without the hassle of ownership.',
+                  style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
               ],
             ),
-          )
+          ),
+          ),
         ],
-      )
+      ),
     );
   }
 }
