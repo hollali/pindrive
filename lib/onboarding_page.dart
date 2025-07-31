@@ -58,7 +58,7 @@ class OnboardingPage extends StatelessWidget {
                         child: Text(
                           'Get Started',
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                       ))
                 ],
