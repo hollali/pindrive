@@ -23,12 +23,11 @@ class OnboardingPage extends StatelessWidget {
             child: Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     'Premium cars at affordable prices. \nEnjoy the luxury of driving without the hassle of ownership.',
                     style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 24,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   ),
