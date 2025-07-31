@@ -22,6 +22,8 @@ class OnboardingPage extends StatelessWidget {
           Expanded(
             child: Container(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     'Premium cars at affordable prices. \nEnjoy the luxury of driving without the hassle of ownership.',
@@ -41,23 +43,25 @@ class OnboardingPage extends StatelessWidget {
                     height: 20,
                   ),
                   SizedBox(
-                    width: 320,
-                    height: 54,
-                    child: ElevatedButton(onPressed: () {
-                      Navigator.of(context).pushAndRemoveUntil(
-                        MaterialPageRoute(builder: (context) => OnboardingPage()),
-                        (Route<dynamic> route) => false,
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.black,
-                      backgroundColor: Colors.white
-                    ),
-                    child: Text(
-                      'Get Started',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                  ))
+                      width: 320,
+                      height: 54,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).pushAndRemoveUntil(
+                            MaterialPageRoute(
+                                builder: (context) => OnboardingPage()),
+                            (Route<dynamic> route) => false,
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                            foregroundColor: Colors.black,
+                            backgroundColor: Colors.white),
+                        child: Text(
+                          'Get Started',
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                      ))
                 ],
               ),
             ),
