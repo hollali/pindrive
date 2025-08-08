@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pindrive/data/models/car.dart';
 import 'package:pindrive/presentation/bloc/car_bloc.dart';
 import 'package:pindrive/presentation/bloc/car_state.dart';
 import 'package:pindrive/presentation/widgets/car_card.dart';
 
 class CarListScreen extends StatelessWidget {
-  const CarListScreen({super.key});
-
 
   @override
   Widget build(BuildContext context) {
