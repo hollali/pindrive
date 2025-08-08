@@ -1,6 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pindrive/firebase_options.dart';
+import 'package:pindrive/injection_container.dart';
+import 'package:pindrive/presentation/bloc/car_bloc.dart';
+import 'package:pindrive/presentation/bloc/car_event.dart';
 import 'package:pindrive/presentation/pages/onboarding_page.dart';
 
 void main() async {
@@ -15,14 +19,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Pin Drive',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return BlocProvider(
+      create: (_) => getIt<CarBloc>()..add(LoadCars()),
+      child: MaterialApp(
+        title: 'PinDrive',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true),
       ),
-      home: OnboardingPage(),
     );
   }
 }
-
