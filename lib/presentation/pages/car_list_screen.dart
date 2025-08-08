@@ -6,6 +6,8 @@ import 'package:pindrive/presentation/bloc/car_state.dart';
 import 'package:pindrive/presentation/widgets/car_card.dart';
 
 class CarListScreen extends StatelessWidget {
+  const CarListScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
