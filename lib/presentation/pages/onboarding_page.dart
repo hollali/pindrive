@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pindrive/presentation/pages/car_list_screen.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -48,7 +49,7 @@ class OnboardingPage extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context).pushAndRemoveUntil(
                             MaterialPageRoute(
-                                builder: (context) => OnboardingPage()),
+                                builder: (context) => CarListScreen()),
                             (Route<dynamic> route) => false,
                           );
                         },
