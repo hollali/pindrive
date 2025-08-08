@@ -5,7 +5,6 @@ import 'package:pindrive/firebase_options.dart';
 import 'package:pindrive/injection_container.dart';
 import 'package:pindrive/presentation/bloc/car_bloc.dart';
 import 'package:pindrive/presentation/bloc/car_event.dart';
-import 'package:pindrive/presentation/pages/onboarding_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
