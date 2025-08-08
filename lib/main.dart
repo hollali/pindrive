@@ -8,8 +8,6 @@ import 'package:pindrive/presentation/bloc/car_event.dart';
 import 'package:pindrive/presentation/pages/onboarding_page.dart';
 
 
-
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
