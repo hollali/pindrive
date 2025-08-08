@@ -6,18 +6,14 @@ import 'package:pindrive/injection_container.dart';
 import 'package:pindrive/presentation/bloc/car_bloc.dart';
 import 'package:pindrive/presentation/bloc/car_event.dart';
 import 'package:pindrive/presentation/pages/onboarding_page.dart';
-import 'package:get_it/get_it.dart';
 
-final sl = GetIt.instance;
 
-void setupLocator() {
-  sl.registerLazySingleton<CarBloc>(() => CarBloc(getCars: sl()));
-}
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  setupLocator();
+  initInjection();
   runApp(const MyApp());
 }
 
