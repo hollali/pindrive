@@ -12,6 +12,7 @@ class CarListScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Choose Your Car'),
+        centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
       ),
