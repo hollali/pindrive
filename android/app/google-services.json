@@ -12,7 +12,20 @@
           "package_name": "com.example.pindrive"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "489839752903-6trigbvn67b02vuuknq5m1q9gbdig9bi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pindrive",
+            "certificate_hash": "246833b2203794706574dd93e71c7e118e9c8141"
+          }
+        },
+        {
+          "client_id": "489839752903-uuehjpi37uv5in5qq26m6iq68vff3ncj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC-StghZ-NMkpePQNu6Ioh3LQK2-TvC4v4"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489839752903-uuehjpi37uv5in5qq26m6iq68vff3ncj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "489839752903-07at73k2gd29cvt9h47pb2t2bb6uvb5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pindrive"
+              }
+            }
+          ]
         }
       }
     }
