@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pindrive/presentation/pages/signup_page.dart';
 
-class OnboardingPage extends StatelessWidget {
-  const OnboardingPage({super.key});
+class SignupPage extends StatelessWidget {
+  const SignupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,24 +9,29 @@ class OnboardingPage extends StatelessWidget {
       backgroundColor: const Color(0xff2C2B34),
       body: Column(
         children: [
+          // Top image section
           Expanded(
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/onboarding.png'),
+                  image: AssetImage(
+                      'assets/signup_banner.png'), // Your signup image
                   fit: BoxFit.cover,
                 ),
               ),
             ),
           ),
+
+          // Bottom form section
           Expanded(
             child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Premium cars at affordable prices. \nEnjoy the luxury of driving without the hassle of ownership.',
-                    textAlign: TextAlign.center, // ✅ Centered text
+                    'Create Your Account',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -36,39 +40,43 @@ class OnboardingPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    'Premium and prestige car rentals in Ghana. \nExperience the thrill of driving luxury vehicles without the commitment of ownership.',
-                    textAlign: TextAlign.center, // ✅ Centered text
+                    'Sign up to book premium and prestige cars instantly.',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.grey,
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 40),
+
+                  // Google OAuth Button
                   SizedBox(
-                    width: 320,
+                    width: double.infinity,
                     height: 54,
-                    child: ElevatedButton(
+                    child: ElevatedButton.icon(
                       onPressed: () {
-                        Navigator.of(context).pushAndRemoveUntil(
-                          MaterialPageRoute(
-                            builder: (context) => SignupPage(),
-                          ),
-                          (Route<dynamic> route) => false,
-                        );
+                        // Handle Google OAuth signup
                       },
                       style: ElevatedButton.styleFrom(
                         foregroundColor: Colors.black,
                         backgroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
                       ),
-                      child: const Text(
-                        'Get Started',
+                      icon: Image.asset(
+                        'assets/google.png', // Google logo asset
+                        height: 24,
+                      ),
+                      label: const Text(
+                        'Continue with Google',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
