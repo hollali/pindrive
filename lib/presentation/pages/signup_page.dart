@@ -40,7 +40,7 @@ class SignupPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    'Sign up to book premium and prestige cars instantly.',
+                    'Sign up to book premium and prestige cars instantly.\nAnd experience the thrill of driving luxury vehicles without the commitment of ownership.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16,
