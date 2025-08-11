@@ -30,7 +30,7 @@ class SignupPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Create Your Account',
+                    'Create Your Account!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 24,
