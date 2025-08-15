@@ -21,7 +21,6 @@ class SignupPage extends StatelessWidget {
               ),
             ),
           ),
-
           // Bottom form section
           Expanded(
             child: Container(
@@ -48,7 +47,6 @@ class SignupPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 40),
-
                   // Google OAuth Button
                   SizedBox(
                     width: 350,
