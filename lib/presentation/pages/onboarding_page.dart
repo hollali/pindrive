@@ -45,7 +45,7 @@ class OnboardingPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   SizedBox(
-                    width: 320,
+                    width: 350,
                     height: 54,
                     child: ElevatedButton(
                       onPressed: () {

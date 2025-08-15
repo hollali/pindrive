@@ -51,7 +51,7 @@ class SignupPage extends StatelessWidget {
 
                   // Google OAuth Button
                   SizedBox(
-                    width: double.infinity,
+                    width: 350,
                     height: 54,
                     child: ElevatedButton.icon(
                       onPressed: () {
