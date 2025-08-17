@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:pindrive/presentation/pages/home.dart';
+import 'package:pindrive/services/auth_service.dart';
 
 class SignupPage extends StatelessWidget {
-  const SignupPage({super.key});
+  SignupPage({super.key});
+
+  final AuthService _authService = AuthService();
 
   @override
   Widget build(BuildContext context) {
@@ -52,8 +56,18 @@ class SignupPage extends StatelessWidget {
                     width: 350,
                     height: 54,
                     child: ElevatedButton.icon(
-                      onPressed: () {
+                      onPressed: () async {
                         // Handle Google OAuth signup
+                        final userCredential =
+                            await _authService.signInWithGoogle();
+                        if (userCredential != null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const HomePage(),
+                            ),
+                          );
+                        }
                       },
                       style: ElevatedButton.styleFrom(
                         foregroundColor: Colors.black,

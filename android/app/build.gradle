@@ -10,7 +10,9 @@ plugins {
 
 android {
     namespace = "com.example.pindrive"
-    compileSdk = flutter.compileSdkVersion
+    // Made some changes some to the default values.
+    // commented out values are the default values.
+    compileSdk = 35 //flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -27,10 +29,11 @@ kotlinOptions {
         applicationId = "com.example.pindrive"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        // commented values are the default values.
+        minSdk = 21 //flutter.minSdkVersion
+        targetSdk = 35 //flutter.targetSdkVersion
+        versionCode = 1 //flutter.versionCode
+        versionName = "1.0" //flutter.versionName
     }
 
     buildTypes {
