@@ -2,7 +2,7 @@
     <application
         android:label="pindrive"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@assets/splash_screen.png"
         android:enableOnBackInvokedCallback="true">
         
         <activity
