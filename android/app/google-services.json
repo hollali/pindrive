@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "489839752903-pvfo4dsbq19225p8h2camcv1lfjmuio5.apps.googleusercontent.com",
+          "client_id": "489839752903-segh4lk1cmn8gmp22mqhufvfjjl84glo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.pindrive",
-            "certificate_hash": "30c6d1693dd4c2453d53e323c010de208501bb2b"
+            "certificate_hash": "27478e96cd819ecf4d48cefa7fa12cba8d51b4f8"
           }
         },
         {
