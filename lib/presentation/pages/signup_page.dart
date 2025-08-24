@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pindrive/presentation/pages/car_list_screen.dart';
-import 'package:pindrive/presentation/pages/home.dart';
 import 'package:pindrive/services/auth_service.dart';
 
 class SignupPage extends StatelessWidget {
