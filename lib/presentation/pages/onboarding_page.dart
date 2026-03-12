@@ -27,7 +27,7 @@ class OnboardingPage extends StatelessWidget {
                 children: [
                   const Text(
                     'Premium cars at affordable prices. \nEnjoy the luxury of driving without the hassle of ownership.',
-                    textAlign: TextAlign.center, // ✅ Centered text
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
